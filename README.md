@@ -1,27 +1,22 @@
-# UIDesign
+# Angular-UI-Design
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+This repository contains the source code for an application built on the UI Design subject at the University of Singidunum, Computer Science department.
+Technology
 
-## Development server
+The application has been developed using the Angular 18 front-end framework and the following libraries:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Angular Material](https://material.angular.io/)
+- [Sweet Alert 2](https://sweetalert2.github.io/)
 
-## Code scaffolding
+## Application Structure
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The source code uses the standard Angular structure without the app.module.ts file. All modules are directly imported within the components that use them.
+Directory Structure
 
-## Build
+- `app` - The main directory containing all the components of the application.
+- `src/models` - This directory contains type and interface definitions required for efficient application development.
+- `src/services` - This directory contains the definitions of the services necessary for the application's operation.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Additional Info
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+The application uses Angular Router, which requires that when deploying the application to production, every route is redirected to the index.html file, as the routes are defined programmatically in JavaScript rather than physically.
