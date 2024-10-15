@@ -1,7 +1,8 @@
 # Angular-UI-Design
 
 This repository contains the source code for an application built on the UI Design subject at the University of Singidunum, Computer Science department.
-Technology
+
+## Technology
 
 The application has been developed using the Angular 18 front-end framework and the following libraries:
 
