@@ -16,6 +16,7 @@ import {MovieService} from '../../services/movie.service';
     MatChipsModule,
     MatProgressBarModule,
     HttpClientModule,
+    JsonPipe,
     NgIf,
     NgFor
   ],

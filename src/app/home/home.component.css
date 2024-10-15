@@ -1,14 +1,33 @@
 .movie-card {
-  max-width: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-title {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.movie-subtitle {
+  font-size: 1em;
+  text-align: center;
+}
+
+.movie-plot {
+  font-size: 0.8em;
 }
 
 .movie-card-footer {
   padding: 15px;
 }
 
-.movie-header-image {
-  /*background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');*/
-  background-size: cover;
+.movie-poster {
+  max-height: 300px;
+  max-width: 200px;
+  object-fit: contain;
 }
 
 p, h1, h2, h3, mat-card-title {
@@ -21,6 +40,7 @@ p, h1, h2, h3, mat-card-title {
   justify-content: center;
   gap: 10px;
 }
+
 
 
 
