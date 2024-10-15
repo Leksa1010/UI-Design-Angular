@@ -6,6 +6,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {HttpClientModule} from '@angular/common/http';
 import {JsonPipe, NgFor, NgIf} from '@angular/common';
 import {MovieService} from '../../services/movie.service';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +19,8 @@ import {MovieService} from '../../services/movie.service';
     HttpClientModule,
     JsonPipe,
     NgIf,
-    NgFor
+    NgFor,
+    MatFormFieldModule,
   ],
   // changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './home.component.html',
@@ -28,7 +30,6 @@ export class HomeComponent implements OnInit {
 
   private static MOVIES = [
     '47 Ronin',
-    'Memoirs of a Geisha',
     'The Matrix',
     'The Fast and the Furious: Tokyo Drift',
     'Taxi 2'

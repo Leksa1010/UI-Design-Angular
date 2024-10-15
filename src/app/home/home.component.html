@@ -3,11 +3,15 @@
     <mat-card-header>
       <div mat-card-avatar class="movie-header-image"></div>
       <mat-card-title class="movie-title">{{ movie.Title }} ({{ movie.Year }})</mat-card-title>
-      <mat-card-subtitle class="movie-subtitle">{{ movie.Writer }}</mat-card-subtitle>
+      <mat-card-subtitle class="movie-subtitle">
+        Directed by: {{ movie.Director }}
+      </mat-card-subtitle>
     </mat-card-header>
     <img class="movie-poster" mat-card-image src="{{movie.Poster}}" alt="{{movie.Title}}">
-    <mat-card-content class="movie-plot">
-      <p>{{ movie.Plot }}</p>
+    <mat-card-content class="movie-details">
+      <p>Plot: {{ movie.Plot }}</p>
+      <p>Length: {{ movie.Runtime }}</p>
+      <p>Casts: {{ movie.Actors }}</p>
     </mat-card-content>
     <mat-card-footer class="movie-card-footer">
       <mat-chip-set aria-label="Genre">
@@ -21,11 +25,29 @@
         <i class="fa-solid fa-thumbs-up"></i> LIKE
       </button>
       <button mat-button>
-        <i class="fa-solid fa-retweet"></i> SHARE
+        <i class="fa-solid fa-comment-dots"></i> WRITE A REVIEW
+      </button>
+      <button mat-button>
+        <i class="fa-solid fa-play"></i> WATCH
       </button>
     </mat-card-actions>
   </mat-card>
-
+  <br>
+<!--  <div class="search-container">-->
+<!--    <mat-card appearance="outlined">-->
+<!--      <mat-card-content>-->
+<!--        <mat-form-field>-->
+<!--          <mat-label>Enter your email</mat-label>-->
+<!--          <input matInput placeholder="pat@example.com" required/>-->
+<!--        </mat-form-field>-->
+<!--        <mat-card-actions>-->
+<!--          <a mat-button [routerLink]="['/about', data.]">-->
+<!--            <i class="fa-solid fa-search"></i> Details-->
+<!--          </a>-->
+<!--        </mat-card-actions>-->
+<!--      </mat-card-content>-->
+<!--    </mat-card>-->
+<!--  </div>-->
   <br>
   <!--  <pre *ngIf="data.length == 5" style="color: beige">{{ data | json }}</pre>-->
 </div>

@@ -16,8 +16,8 @@
   text-align: center;
 }
 
-.movie-plot {
-  font-size: 0.8em;
+.movie-details {
+  font-size: 0.85em;
 }
 
 .movie-card-footer {
@@ -35,7 +35,7 @@ p, h1, h2, h3, mat-card-title {
 }
 
 .container {
-  margin-top: 30px;
+  margin: 30px;
   display: flex;
   justify-content: center;
   gap: 10px;
