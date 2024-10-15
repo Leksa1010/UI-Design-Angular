@@ -1,12 +1,12 @@
-.example-card {
+.movie-card {
   max-width: 400px;
 }
 
-.example-card-footer {
-  padding: 16px;
+.movie-card-footer {
+  padding: 15px;
 }
 
-.example-header-image {
+.movie-header-image {
   /*background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');*/
   background-size: cover;
 }
@@ -21,4 +21,6 @@ p, h1, h2, h3, mat-card-title {
   justify-content: center;
   gap: 10px;
 }
+
+
 

@@ -16,7 +16,6 @@ import {MovieService} from '../../services/movie.service';
     MatChipsModule,
     MatProgressBarModule,
     HttpClientModule,
-    JsonPipe,
     NgIf,
     NgFor
   ],
@@ -27,9 +26,11 @@ import {MovieService} from '../../services/movie.service';
 export class HomeComponent implements OnInit {
 
   private static MOVIES = [
+    '47 Ronin',
+    'Memoirs of a Geisha',
+    'The Matrix',
     'The Fast and the Furious: Tokyo Drift',
-    'Taxi 2',
-    'The Matrix'
+    'Taxi 2'
   ]
   public data: any[] = [];
   public service: MovieService;

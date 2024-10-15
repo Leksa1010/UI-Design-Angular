@@ -1,7 +1,7 @@
-<div class="container" *ngIf="data.length == 3">
-  <mat-card class="example-card" appearance="outlined" *ngFor="let movie of data">
+<div class="container" *ngIf="data">
+  <mat-card class="movie-card" appearance="outlined" *ngFor="let movie of data">
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
+      <div mat-card-avatar class="movie-header-image"></div>
       <mat-card-title>{{movie.Title}}</mat-card-title>
       <mat-card-subtitle>{{movie.Writer}}</mat-card-subtitle>
     </mat-card-header>
@@ -9,9 +9,9 @@
     <mat-card-content>
       <p>{{movie.Plot}}</p>
     </mat-card-content>
-    <mat-card-footer class="example-card-footer">
-      <mat-chip-set aria-label="Shiba traits">
-        <mat-chip>charming</mat-chip>
+    <mat-card-footer class="movie-card-footer">
+      <mat-chip-set aria-label="Genre">
+        <mat-chip>{{ movie.Genre }}</mat-chip>
         <mat-chip>graceful</mat-chip>
         <mat-chip>sassy</mat-chip>
       </mat-chip-set>
@@ -23,5 +23,5 @@
   </mat-card>
 
   <br>
-  <pre *ngIf="data.length == 3" style="color: beige">{{ data | json }}</pre>
+<!--  <pre *ngIf="data.length == 3" style="color: beige">{{ data | json }}</pre>-->
 </div>
