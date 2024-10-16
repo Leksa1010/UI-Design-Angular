@@ -6,7 +6,6 @@ import {MatChipsModule} from '@angular/material/chips';
 import {HttpClientModule} from '@angular/common/http';
 import {JsonPipe, NgFor, NgIf} from '@angular/common';
 import {MovieService} from '../../services/movie.service';
-import {MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
   selector: 'app-home',
@@ -20,7 +19,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     JsonPipe,
     NgIf,
     NgFor,
-    MatFormFieldModule,
+
   ],
   // changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './home.component.html',

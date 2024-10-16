@@ -7,3 +7,6 @@ mat-toolbar {
   justify-content: space-between;
 }
 
+.search-container {
+  padding-top: 20px;
+}

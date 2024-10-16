@@ -1,6 +1,15 @@
 <mat-toolbar color="primary">
   <span><mat-icon fontIcon="movie"></mat-icon>Digital Cinema Desk</span>
   <span class="spacer"></span>
+  <div class="search-container">
+    <mat-form-field>
+      <mat-label>Search for movies</mat-label>
+      <input
+        matInput
+        placeholder="Type the movie title" required/>
+    </mat-form-field>
+  </div>
+
   <a routerLink="/" mat-button>
     <mat-icon fontIcon="home"></mat-icon>
     Home</a>

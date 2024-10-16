@@ -5,6 +5,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIcon, MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 @Component({
@@ -19,6 +22,10 @@ import {MatChipsModule} from '@angular/material/chips';
     RouterLink,
     MatCardModule,
     MatChipsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
