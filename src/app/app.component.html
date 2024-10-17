@@ -4,12 +4,14 @@
   <div class="search-container">
     <mat-form-field>
       <mat-label>Search for movies</mat-label>
-      <input
-        matInput
-        placeholder="Type the movie title" required/>
+      <input matInput placeholder="Type the movie title" required/>
     </mat-form-field>
+    <mat-card-actions>
+      <a mat-button [routerLink]="['/search']">
+        <i class="fa-solid fa-search"></i> Search
+      </a>
+    </mat-card-actions>
   </div>
-
   <a routerLink="/" mat-button>
     <mat-icon fontIcon="home"></mat-icon>
     Home</a>
