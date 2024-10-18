@@ -1,0 +1,13 @@
+.signup-form {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+mat-card-header {
+  color: white;
+}
+
+.width-full {
+  width: 100%;
+}
