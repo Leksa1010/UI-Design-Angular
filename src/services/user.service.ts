@@ -10,6 +10,12 @@ export class UserService {
   private retrieveAllUsers(): UserModel[] {
     let json = localStorage.getItem('users');
     if (json == null) {
+      const defUser = {
+        email: 'korisnik@singidunum.com',
+        name: 'Singi Korisnik',
+        password: bcrypt.hashSync('123456', 12),
+        booked: ['The Matrix'],
+      }
       localStorage.setItem('users', JSON.stringify([]));
       json = localStorage.getItem('users');
     }
