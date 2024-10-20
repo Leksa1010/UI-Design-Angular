@@ -6,6 +6,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {HttpClientModule} from '@angular/common/http';
 import {JsonPipe, NgFor, NgIf} from '@angular/common';
 import {MovieService} from '../../services/movie.service';
+import {UserService} from '../../services/user.service';
 
 @Component({
   selector: 'app-home',
@@ -35,9 +36,11 @@ export class HomeComponent implements OnInit {
   ]
   public data: any[] = [];
   public service: MovieService;
+  public user: UserService
 
   constructor() {
     this.service = MovieService.getInstance()
+    this.user = UserService.getInstance()
   }
 
   ngOnInit(): void {
