@@ -31,8 +31,14 @@ export class HomeComponent implements OnInit {
   private static MOVIES = [
     '47 Ronin',
     'The Matrix',
-    'The Fast and the Furious: Tokyo Drift',
-    'Taxi 2'
+    'Interstellar',
+    'Blade',
+    'The Transporter',
+    'Dark Knight',
+    'Joker',
+    'Knives Out',
+    'Jason Bourne',
+    '300'
   ]
   public data: any[] = [];
   public service: MovieService;

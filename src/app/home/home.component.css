@@ -1,6 +1,7 @@
 .movie-card {
   width: 400px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -37,6 +38,7 @@ p, h1, h2, h3, mat-card-title {
 .container {
   margin: 30px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
