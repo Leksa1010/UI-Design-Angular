@@ -10,6 +10,7 @@ import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {UserService} from '../services/user.service';
 import {NgIf} from '@angular/common';
+import {MatOption, MatSelect} from '@angular/material/select';
 
 
 @Component({
@@ -29,6 +30,8 @@ import {NgIf} from '@angular/common';
     FormsModule,
     ReactiveFormsModule,
     NgIf,
+    MatSelect,
+    MatOption
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

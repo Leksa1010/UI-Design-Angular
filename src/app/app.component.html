@@ -15,9 +15,17 @@
   <a routerLink="/" mat-button>
     <mat-icon fontIcon="home"></mat-icon>
     Home</a>
-  <a routerLink="/genre" mat-button>
-    <mat-icon fontIcon="theater_comedy"></mat-icon>
-    Generes</a>
+  <mat-form-field>
+    <mat-label>
+      <mat-icon fontIcon="theater_comedy"></mat-icon>
+      Generes
+    </mat-label>
+    <mat-select disableRipple>
+      <mat-option value="1">Action</mat-option>
+      <mat-option value="2">Drama</mat-option>
+      <mat-option value="3">Comedy</mat-option>
+    </mat-select>
+  </mat-form-field>
   <a routerLink="/profile" mat-button *ngIf="userService.hasCurrentUser(); else profile">Profile</a>
   <a routerLink="/about" mat-button>
     <mat-icon fontIcon="info"></mat-icon>
