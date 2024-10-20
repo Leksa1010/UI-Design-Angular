@@ -97,4 +97,8 @@ export class UserService {
     sessionStorage.removeItem('active')
   }
 
+  public getAvatar() {
+    const current = this.getCurrentUser()
+    return 'https://ui-avatars.com/api/?name='+current.name
+  }
 }

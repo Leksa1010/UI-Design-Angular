@@ -6,6 +6,6 @@ export interface MovieModel {
   writer: string;
   actors: string;
   plot: string;
-  imdbID: string;
+  imdbID: number;
   imdbRating: number;
 }
